@@ -1,5 +1,5 @@
 def setZeroes(matrix):
-    l=[]
+    indexes=[]
     for i in range(len(matrix)):
         for j in range(len(matrix[0])):
             if matrix[i][j]==0:
