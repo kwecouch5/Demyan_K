@@ -16,5 +16,5 @@ def binary_search(n,target):
             high = mid - 1
     return f
 
-print(binary_search([1,7,3,2,6,9,4,8,5,4,5,5,5,5,5,5],5))
+print(binary_search([1,7,3,2,6,9,4,8,5,4,5,5,5,5,5,5],10))
 
