@@ -1,4 +1,6 @@
 def isugly(n):
+    if n==0:
+        return False
     k=[2,3,5]
     i=0
     while i<len(k):
@@ -7,7 +9,7 @@ def isugly(n):
             i=0
         else:
             i+=1
-        if n==1 or n==0:
+        if n==1:
             return True
     return False
 
