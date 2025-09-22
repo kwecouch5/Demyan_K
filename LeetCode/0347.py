@@ -4,7 +4,7 @@ def topKFrequent(nums,k):
         if nums[i] in a:
             a[nums[i]]+=1
         else:
-            a[nums[i]]=1
+             a[nums[i]]=1
     result=[0]*k
     for i in range(len(result)):
         l=max(a,key=a.get)
