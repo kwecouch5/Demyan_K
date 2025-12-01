@@ -22,6 +22,6 @@ def heapsort(list):
     for i in range(len(list) - 1, 0, -1):
         list[0], list[i] = list[i], list[0]
         heapify(list, 0, i)
-g=[54,7,2,9,85,3,0,38,456,31,41]
+g=[3,2,3,1,2,4,5,5,6]
 heapsort(g)
-print(g)
+print(g[len(g)-4:len(g)-3:])
