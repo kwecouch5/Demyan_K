@@ -9,4 +9,4 @@ def proizv_matrix(a,b):
             for r in range(len(b)):
                 c[i][j]+=(a[i][r])*(b[r][j])
     return c
-print(proizv_matrix([[1],[1]],[[2]]))
+print(proizv_matrix([[1,2,3],[1,1,1]],[[2],[1],[1]]))

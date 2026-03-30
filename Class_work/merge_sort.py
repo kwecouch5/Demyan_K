@@ -23,17 +23,9 @@ def merge(l,r):
     return s
 
 
-def merge_sort(s):
-    if len(s)<=1:
-        return s
-    else:
-        l=len(s)//2
-        return merge(merge_sort(s[:l:]),merge_sort(s[l::]))
-
-
 def merge_sort_1(s):
     if len(s)<=1:
-        return
+        return s
     else:
         l=len(s)//2
         s_1=merge_sort_1(s[:l:])
@@ -41,7 +33,7 @@ def merge_sort_1(s):
         final=merge(s_1, s_2)
         for i in range(len(s)):
             s[i]=final[i]
-            return s
+        return s
 a=[2,6,1,4,3,9,5,8,7,0,10]
 merge_sort_1(a)
 print(a)
